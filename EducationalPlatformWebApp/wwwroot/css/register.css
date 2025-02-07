@@ -1,0 +1,90 @@
+﻿/* Register Page Full-Screen Styles */
+.register-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Left Section */
+.register-left {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.register-left h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #1a3e88;
+        margin-bottom: 10px;
+
+}
+register-left p {
+        font-size: 1.5rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+}
+
+.register-left img {
+        max-width: 90%;
+        height: auto;
+}
+
+/* Right Section */
+.register-right {
+    padding: 20px;
+}
+
+.register-container {
+    max-width: 100%; /* Remove any width constraints */
+    padding: 0 20px; /* Ensure padding allows space */
+    margin-bottom: 50px; /* Add space at the bottom of the container */
+}
+
+.register-form {
+    padding-bottom: 50px; /* Add extra space at the bottom inside the form */
+    margin-bottom: 50px; /* Add space below the form */
+}
+
+.register-left img {
+    max-width: 100%; /* Increase the maximum width to make it larger */
+    height: auto; /* Maintain aspect ratio */
+    width: 500px; /* Set a specific width, adjust as needed */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+
+
+.row {
+    justify-content: center; /* Keep the form centered */
+    column-gap: 200px; /* Adjust spacing between sections if necessary */
+}
+
+
+.card {
+    width: 700px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #1a3e88; /* Deep blue color */
+    border-color: #1a3e88; /* Match border color */
+    color: white; /* Keep text white */
+    font-weight: bold; /* Match the bold text style */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    border-radius: 10px; /* Rounded corners */
+}
+.register-title {
+    font-family: 'Arial', sans-serif; /* Use a clean, sans-serif font */
+    font-weight: bold; /* Ensure bold styling */
+    font-size: 2rem; /* Adjust font size */
+    letter-spacing: 0.5px; /* Slight spacing between letters for clarity */
+    text-align: center; /* Center the text */
+    color: #000; /* Ensure black text color */
+}
+
+
+   

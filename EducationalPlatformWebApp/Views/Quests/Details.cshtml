@@ -1,0 +1,42 @@
+﻿@model EducationalPlatformWebApp.Models.Quest
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Quest</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuestDifficultyLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuestDifficultyLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuestCriteria)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuestCriteria)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuestDescriptions)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuestDescriptions)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuestTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuestTitle)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.QuestId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

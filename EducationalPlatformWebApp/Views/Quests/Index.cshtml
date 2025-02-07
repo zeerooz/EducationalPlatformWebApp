@@ -1,0 +1,53 @@
+﻿@model IEnumerable<EducationalPlatformWebApp.Models.Quest>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestDifficultyLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestCriteria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestDescriptions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestTitle)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestDifficultyLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestCriteria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestDescriptions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestTitle)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.QuestId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.QuestId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.QuestId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

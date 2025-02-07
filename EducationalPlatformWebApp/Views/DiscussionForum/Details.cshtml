@@ -1,0 +1,28 @@
+@using EducationalPlatformWebApp.Models
+@model DiscussionForum
+
+<div class="container mt-5">
+    <h3>@Model.FroumTitles</h3> <!-- Corrected Title to FroumTitles -->
+    <p>@Model.ForumDescription</p> <!-- Corrected Description to ForumDescription -->
+    <hr>
+    <h4>Posts</h4>
+
+    @if (Model.LearnerDiscussions != null && Model.LearnerDiscussions.Any())
+    {
+        <ul class="list-group">
+            @foreach (var post in Model.LearnerDiscussions)
+            {
+                <li class="list-group-item">
+                    <strong>@post.Learner?.FirstName @post.Learner?.LastName</strong>: @post.Post
+                    <span class="text-muted float-end">@post.DiscussionTime?.ToString("hh:mm tt")</span>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No posts available yet.</p>
+    }
+
+    <a asp-action="AddPost" asp-route-forumId="@Model.ForumId" class="btn btn-success mt-3">Add Post</a>
+</div>

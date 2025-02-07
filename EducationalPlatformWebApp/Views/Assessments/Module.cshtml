@@ -1,0 +1,42 @@
+﻿@model EducationalPlatformWebApp.Models.Assessment
+
+@{
+    ViewData["Title"] = "Add Assessment to Module";
+}
+
+<h1>Add Assessment to Module: @ViewData["ModuleTitle"]</h1>
+
+<h4>Module ID: @ViewData["ModuleId"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddToModule" asp-route-moduleId="@ViewData["ModuleId"]">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="ModuleId" value="@ViewData["ModuleId"]" />
+
+            <div class="form-group">
+                <label asp-for="AssessmentsTitle" class="control-label"></label>
+                <input asp-for="AssessmentsTitle" class="form-control" />
+                <span asp-validation-for="AssessmentsTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssessmentsType" class="control-label"></label>
+                <input asp-for="AssessmentsType" class="form-control" />
+                <span asp-validation-for="AssessmentsType" class="text-danger"></span>
+            </div>
+            <div class="form-group text-end">
+                <input type="submit" value="Add Assessment" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Details" asp-route-id="@ViewData["ModuleId"]" class="btn btn-secondary">Back to Module Details</a>
+</div>
+
+@section Scripts {
+           await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+}

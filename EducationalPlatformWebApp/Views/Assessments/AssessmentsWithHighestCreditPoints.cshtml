@@ -1,0 +1,36 @@
+﻿@model IEnumerable<EducationalPlatformWebApp.Models.AssessmentWithCreditPointsModel>
+
+<h2>Assessments with the Highest Credit Points</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Course ID</th>
+            <th>Course Title</th>
+            <th>Assessment ID</th>
+            <th>Assessment Title</th>
+            <th>Total Marks</th>
+            <th>Credit Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CourseID</td>
+                <td>@item.CourseTitle</td>
+                <td>@item.AssessmentID</td>
+                <td>@item.AssessmentTitle</td>
+                <td>@item.TotalMarks</td>
+                <td>@item.CreditPoints</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Home/Index" class="btn btn-primary">Back to Home</a>

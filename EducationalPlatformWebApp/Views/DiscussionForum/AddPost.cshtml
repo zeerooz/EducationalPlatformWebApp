@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Add Post";
+    var forumId = ViewData["ForumId"];
+}
+
+<div class="container mt-5">
+    <h3>Add a New Post</h3>
+    <form asp-action="AddPost" method="post">
+        <input type="hidden" name="forumId" value="@forumId" />
+        <div class="mb-3">
+            <label for="createdBy" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="createdBy" name="createdBy" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Post Content</label>
+            <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit Post</button>
+    </form>
+</div>

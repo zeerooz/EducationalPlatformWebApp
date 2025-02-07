@@ -1,0 +1,66 @@
+﻿@model EducationalPlatformWebApp.Models.Assessment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Assessment</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AssessmentsType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssessmentsType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalMarks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalMarks)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PassingMarks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PassingMarks)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AssessmentsCriteria)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssessmentsCriteria)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weightage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weightage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AssessmentsDescriptioin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssessmentsDescriptioin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AssessmentsTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssessmentsTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Module)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Module.ModuleId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.AssessmentsId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
