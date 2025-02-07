@@ -10,3 +10,8 @@ Real-Time Personalization: Adapts learning paths and content based on ongoing as
 Interactive Learning Activities: Offers quizzes, assignments, and other interactive tasks to enhance the learning experience.
 Emotional Feedback Integration: Utilizes emotional feedback to tailor content and support learner well-being.
 Skill Progress Tracking: Monitors and updates skill levels, providing personalized challenges as learners advance.
+
+Under Construction
+Please note that this project is currently under development and is not yet complete. The features and functionalities described are being actively worked on, and the system will undergo further improvements and testing before its official release.
+
+https://github.com/user-attachments/assets/819ffa02-eb4e-4277-95a0-cb4f15476bee
