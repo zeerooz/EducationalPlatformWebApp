@@ -14,4 +14,4 @@ Skill Progress Tracking: Monitors and updates skill levels, providing personaliz
 Under Construction
 Please note that this project is currently under development and is not yet complete. The features and functionalities described are being actively worked on, and the system will undergo further improvements and testing before its official release.
 
-https://github.com/user-attachments/assets/819ffa02-eb4e-4277-95a0-cb4f15476bee
+https://github.com/user-attachments/assets/8e72ea9f-d866-4861-b9ee-8e4e85b78237
